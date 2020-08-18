@@ -17,19 +17,20 @@ class _GuitarTunerState extends State<GuitarTuner> {
 
       body: Center(
         child: Container(
+          
           constraints: BoxConstraints.expand(),
           decoration: BoxDecoration(
           image: DecorationImage(
-              image:AssetImage("assets/secondguitar.jpg"),
-            fit: BoxFit.contain,
+            image:AssetImage("assets/secondguitar.jpg"),
+            fit: BoxFit.fill
           ),
-        ),
+         ),
 
 
       )
         
       
     ),
-    );
+ );
   }
-}
+ }
