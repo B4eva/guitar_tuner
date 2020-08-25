@@ -10,27 +10,24 @@ class _GuitarTunerState extends State<GuitarTuner> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      backgroundColor: Colors.brown[400],
-      title: Text('Guitar Tuner'),
-      elevation: 0,
-),
-
-      body: Center(
-        child: Container(
-          
+        backgroundColor: Colors.brown[400],
+        title: Text('Guitar Tuner'),
+        elevation: 0,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Center(
+            child: Container(
+          padding: EdgeInsets.all(20),
           constraints: BoxConstraints.expand(),
           decoration: BoxDecoration(
-          image: DecorationImage(
-            image:AssetImage("assets/secondguitar.jpg"),
-            fit: BoxFit.fill
+            image: DecorationImage(
+              image: AssetImage("assets/secondguitar.jpg"),
+              fit: BoxFit.contain,
+            ),
           ),
-         ),
-
-
-      )
-        
-      
-    ),
- );
+        )),
+      ),
+    );
   }
- }
+}

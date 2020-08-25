@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
     
-        initialRoute: '/',
-      // home:Home(),
+        initialRoute: '/tuner',
+      
       routes: {
         '/': (context) => Home(),
         '/guitartuner': (context) => GuitarTuner(),
